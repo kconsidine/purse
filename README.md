@@ -19,7 +19,7 @@ It aims to make developing web applications with PHP (using modern, clean paradi
 
 ## Features
 
-#### Routes
+### Routes
 Add routes in `public/index.php`.
 ```php
 $purse->action('/example', function(&$view) {
