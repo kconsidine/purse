@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         },
       },
       jade: {
-        files: ['views/jade/*.jade'],
+        files: ['views/*.jade'],
         options: {
           spawn: false,
           livereload: true
