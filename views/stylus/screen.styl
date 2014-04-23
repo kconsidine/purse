@@ -1,0 +1,80 @@
+/* Utilities and base styles from https//github.com/TryGhost/Casper. Thanks! */
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/* Clears shit */
+.clearfix:before, .clearfix:after
+  content " "
+  display table
+.clearfix:after
+  clear both
+.clearfix
+  *zoom 1
+
+/* Hides shit */
+.hidden
+  text-indent -9999px
+  visibility hidden
+  display none
+
+/* Centres vertically yo. (IE8+) */
+.vertical
+  display table-cell
+  vertical-align middle
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html
+  height 100%
+  max-height 100%
+  font-size 62.5%
+
+body
+  height 100%
+  max-height 100%
+  background #f9f9f9
+  color #333
+  font-family 'Helvetica Neue', Helvetica, Arial, sans-serif
+  font-weight 300
+  font-size 2.0rem
+  line-height 1.6em
+
+a
+  color #333
+  transition color ease 0.3s
+  text-decoration none
+  border-bottom 1px solid rgba(0, 0, 0, 0.2)
+
+a:hover
+  color #57A3E8
+
+/* ==========================================================================
+   Site styles
+   ========================================================================== */
+
+.grid
+  width 800px
+  margin 0 auto
+
+#header
+  h1
+    margin 0
+  padding 4rem 0
+  border-bottom 1px solid rgba(0, 0, 0, 0.1)
+
+#content
+  padding 2rem 0
+
+#footer
+  color rgba(0, 0, 0, 0.4)
+  font-size 1.5rem
+  p
+    margin 0
+  a
+    color rgba(0, 0, 0, 0.4)
+    &:hover
+      color #57A3E8
