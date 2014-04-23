@@ -67,7 +67,7 @@ This file provides a getPDOHandle() function which returns a PDO handle construc
 
 ## Credits
 
-Purse by [vladh](http://vladh.net). Website by [petrut](http://petrutoader.com). Built at [Phyramid](http://phyramid.com).
+Purse is lovingly built by [vladh](http://vladh.net) and [petrut](http://petrutoader.com) at [Phyramid](http://phyramid.com).
 
 Additional thanks:
 * [normalize.css](http://necolas.github.io/normalize.css/)
