@@ -10,6 +10,8 @@ Purse is a minimal web framework for PHP inspired by Sinatra. It has several maj
 
 It aims to make developing web applications with PHP (using modern, clean paradigms) as easy as in Ruby or NodeJS.
 
+Suggestions (including for new features) are very welcome. If you have any, open an issue or contact me.
+
 ## Installation
 * `git clone https://github.com/vladh/purse`
 * `cd purse`
