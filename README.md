@@ -17,7 +17,7 @@ Suggestions (including for new features) are very welcome. If you have any, open
 * `cd purse`
 * `npm install -g grunt-cli`
 * `npm install`
-* Set your webserver to serve `purse/public` which contains `index.php`, the web-accessible files and static resources.
+* Set your webserver to serve `purse/public`
 
 ## Features
 
