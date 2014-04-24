@@ -70,5 +70,6 @@ This file provides a getPDOHandle() function which returns a PDO handle construc
 Purse is lovingly built by [vladh](http://vladh.net) and [petrut](http://petrutoader.com) at [Phyramid](http://phyramid.com).
 
 Additional thanks:
+* [jade-php](https://github.com/ronan-gloo/jade-php)
 * [normalize.css](http://necolas.github.io/normalize.css/)
 * [Rick Ross](http://www.godforgivesidont.com/)
