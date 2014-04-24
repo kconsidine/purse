@@ -39,14 +39,10 @@
         </div>
 
         <div class="main">
-          <pre>
-<code class="language-bash">
-git clone https://github.com/phyramid/purse
+          <pre><code class="language-bash">git clone https://github.com/phyramid/purse
 npm install -g grunt-cli
 cd purse && npm install
-</code>
-</pre>
-
+</code></pre>
           <p>Set your webserver to serve <code class="language-php">purse/public</code></p>
         </div>
       </div>
@@ -59,16 +55,13 @@ cd purse && npm install
         <div class="main">
           <p>Add routes in <code class="language-php">public/index.php</code> .</p>
           <pre>
-<code class="language-php">
-$purse-&gt;action('/example', function(&$view) {
-$view = 'example';
+<code class="language-php">$purse-&gt;action('/example', function(&$view) {
+  $view = 'example';
 
-return array(
-'baseURL' =&gt; BASE_URL
-);
-});
-</code>
-</pre>
+  return array(
+    'baseURL' =&gt; BASE_URL
+  );
+});</code></pre>
 
           <p>You should specify the view you want to load <code class="language-php">($view)</code> and the variables you want to pass to it ( <code class="language-php">return array(...)</code> ).</p>
         </div>
@@ -82,17 +75,14 @@ return array(
         <div class="main">
           <p>Views are in <code class="language-php">views/</code> . <code class="language-php">default.jade</code> is included by default as the main view/template which other views derive from. To add a new view, just create <code class="language-php">views/example.jade</code> :</p>
           <pre>
-<code class="language-coffeescript">
-extends default
+<code class="language-coffeescript">extends default
 
 block content
-#content.grid
-p Hi. Your content goes here.
+  #content.grid
+    p Hi. Your content goes here.
 
 block scripts
-script(type="text/javascript", src="js/example.js") 
-</code>
-</pre>
+  script(type="text/javascript", src="js/example.js") </code></pre>
         </div>
       </div>
 
@@ -104,17 +94,14 @@ script(type="text/javascript", src="js/example.js")
         <div class="main">
           <p>Stylus files are in <code class="language-php">views/stylus/</code> . To compile these files, run <code class="language-php">grunt watch</code> . Grunt compiles by default the stylus template <code class="language-php">views/stylus/screen.styl</code> into <code class="language-php">public/stylesheets/screen.css</code> . You can add more or modify the paths of stylesheets in <code class="language-php">Gruntfile.js</code> :</p>
           <pre>
-<code class="language-javascript">
-stylus: {
-compile: {
-options: {},
-files: {
-'public/stylesheets/example.css': ['views/stylus/example.styl']
-}
-}
-}
-</code>
-</pre>
+<code class="language-javascript">stylus: {
+  compile: {
+    options: {},
+    files: {
+      'public/stylesheets/example.css': ['views/stylus/example.styl']
+    }
+  }
+}</code></pre>
         </div>
       </div>
     </div>
