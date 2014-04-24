@@ -1,0 +1,77 @@
+@import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400");
+body {
+  background: url("../images/bg.jpg");
+  padding: 50px;
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-size: 14px;
+  line-height: 1.5;
+}
+a {
+  color: #00b7ff;
+}
+.container {
+  width: 850px;
+  margin: 0 auto;
+}
+.intro {
+  margin: 0 auto;
+  width: 450px;
+  padding: 30px;
+}
+.intro .row {
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+}
+.intro .row.title {
+  font-size: 125px;
+  background: url("../images/diamonds.png") center center no-repeat;
+  color: #fff;
+}
+.intro .row.description-first {
+  font-size: 62px;
+}
+.intro .row.description-second {
+  font-size: 80px;
+}
+.intro .links {
+  text-align: right;
+  padding: 10px;
+}
+.content {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.content code {
+  font-size: 14px;
+}
+.content pre {
+  border: 0;
+  line-height: 1;
+  padding: 0.75em;
+}
+.content pre code {
+  margin: 0;
+}
+.content .description {
+  text-align: center;
+}
+.content .entry {
+  margin-top: 25px;
+}
+.content .entry .header {
+  font-weight: 400;
+  font-size: 52px;
+}
+.content .entry .main {
+  font-size: 22px;
+}
+.footer {
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+}
+.footer a {
+  color: #0074d9;
+}

@@ -1,1 +1,127 @@
-Hi.
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+  <title>Purse, the Jade and Stylus ready PHP framework</title>
+  <link href="/stylesheets/normalize.css" rel="stylesheet">
+  <link href="/stylesheets/prism.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="intro clearfix">
+      <div class="links">
+        <a href="http://github.com/phyramid/purse"><img src="images/github.png"></a>
+      </div>
+
+      <div class="row title">
+        PURSE
+      </div>
+
+      <div class="row description-first">
+        THE JADE AND STYLUS
+      </div>
+
+      <div class="row description-second">
+        PHP FRAMEWORK
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="description">
+        <p>Purse is a minimal web framework for PHP inspired by Sinatra. It aims to make developing web applications with PHP (using modern, clean paradigms) as easy as in Ruby or NodeJS.</p>
+      </div>
+
+      <div class="entry">
+        <div class="header">
+          Installation
+        </div>
+
+        <div class="main">
+          <pre>
+<code class="language-bash">
+git clone https://github.com/phyramid/purse
+npm install -g grunt-cli
+cd purse && npm install
+</code>
+</pre>
+
+          <p>Set your webserver to serve <code class="language-php">purse/public</code></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="header">
+          Routes
+        </div>
+
+        <div class="main">
+          <p>Add routes in <code class="language-php">public/index.php</code> .</p>
+          <pre>
+<code class="language-php">
+$purse-&gt;action('/example', function(&$view) {
+$view = 'example';
+
+return array(
+'baseURL' =&gt; BASE_URL
+);
+});
+</code>
+</pre>
+
+          <p>You should specify the view you want to load <code class="language-php">($view)</code> and the variables you want to pass to it ( <code class="language-php">return array(...)</code> ).</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="header">
+          MVC & Jade
+        </div>
+
+        <div class="main">
+          <p>Views are in <code class="language-php">views/</code> . <code class="language-php">default.jade</code> is included by default as the main view/template which other views derive from. To add a new view, just create <code class="language-php">views/example.jade</code> :</p>
+          <pre>
+<code class="language-coffeescript">
+extends default
+
+block content
+#content.grid
+p Hi. Your content goes here.
+
+block scripts
+script(type="text/javascript", src="js/example.js") 
+</code>
+</pre>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="header">
+          Stylus & Grunt
+        </div>
+
+        <div class="main">
+          <p>Stylus files are in <code class="language-php">views/stylus/</code> . To compile these files, run <code class="language-php">grunt watch</code> . Grunt compiles by default the stylus template <code class="language-php">views/stylus/screen.styl</code> into <code class="language-php">public/stylesheets/screen.css</code> . You can add more or modify the paths of stylesheets in <code class="language-php">Gruntfile.js</code> :</p>
+          <pre>
+<code class="language-javascript">
+stylus: {
+compile: {
+options: {},
+files: {
+'public/stylesheets/example.css': ['views/stylus/example.styl']
+}
+}
+}
+</code>
+</pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Purse is lovingly built by <a href="http://vladh.net">vladh</a> and <a href="http://petrutoader.com">petrut</a> at <a href="http://phyramid.com">Phyramid</a></p>
+    </div>
+  </div><script src="/javascripts/prism.js"></script>
+</body>
+</html>
