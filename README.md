@@ -1,7 +1,7 @@
 ![Purse logo](http://phyramid.github.io/purse/images/logo-bar-small.png)
 ============================
 
-Purse is a minimal web framework for PHP inspired by Sinatra. It has several major features:
+Purse is a modern web framework for PHP inspired by Sinatra. It has several major features:
 * Routes
 * MVC
 * Jade
