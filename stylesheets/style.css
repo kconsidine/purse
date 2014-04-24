@@ -34,7 +34,8 @@ p {
 
 container {
   width: 80%;
-  max-width: 900px;
+  max-width: 800px;
+  padding: 0 2rem;
   margin: 0 auto;
   display: block;
 }
