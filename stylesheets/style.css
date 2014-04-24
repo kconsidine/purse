@@ -1,77 +1,229 @@
+/* =============
+ * Base styles
+ * ============= */
+
 @import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400");
+
+html {
+  height: 100%;
+  max-height: 100%;
+  font-size: 62.5%;
+}
 body {
+  /* background: #f2f2f2; */
   background: url("../images/bg.jpg");
-  padding: 50px;
+  color: #333;
+  font-weight: 300;
+  font-size: 2.0rem;
+  line-height: 1.6em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .header-row, .go-github {
   font-family: 'Yanone Kaffeesatz', 'sans-serif';
-  font-size: 14px;
-  line-height: 1.5;
+  font-weight: 400;
 }
+
 a {
-  color: #00b7ff;
+  color: #08c;
 }
-.container {
+
+p {
+  margin: 1.6rem 0;
+}
+
+container {
   width: 850px;
   margin: 0 auto;
+  display: block;
 }
-.intro {
+
+/* =============
+ * Heading
+ * ============= */
+
+header {
   margin: 0 auto;
-  width: 450px;
-  padding: 30px;
+  width: 430px;
+  padding: 6rem 0;
 }
-.intro .row {
+
+diamond {
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: white;
+  position: relative;
+  top: -20px;
+}
+diamond:after {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: white;
+}
+diamond.header-diamond-left, diamond.header-diamond-right {
+  position: absolute;
+  top: 2rem;
+}
+diamond.header-diamond-left {
+  left: 1.5rem;
+}
+diamond.header-diamond-right {
+  right: 1.5rem;
+}
+
+.header-row {
   width: 100%;
   text-align: center;
   line-height: 1;
+  margin: 0;
+  padding: 0;
 }
-.intro .row.title {
-  font-size: 125px;
+
+.header-row-intro {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.header-row-title {
+  position: relative;
+  font-size: 12rem;
   background: url("../images/diamonds.png") center center no-repeat;
+  background: #da3330;
   color: #fff;
+  margin: 0.5rem 0;
 }
-.intro .row.description-first {
-  font-size: 62px;
+.header-row-title:before {
+
 }
-.intro .row.description-second {
-  font-size: 80px;
+
+.header-row-sinatra {
+  font-size: 6.2rem;
 }
-.intro .links {
-  text-align: right;
-  padding: 10px;
+
+.header-row-jade {
+  font-size: 8rem;
 }
-.content {
+
+.header-row-php {
+  font-size: 8.3rem;
+}
+
+.go-github {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: #333;
+  font-size: 4rem;
+  text-decoration: none;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+.go-github:before, .go-github:after {
+  position: absolute;
+  color: #333;
+  font-size: 6rem;
+  top: 0.7rem;
+  transition: left ease 0.3s;
+  width: 3rem;
+  text-align: center;
+}
+.go-github:before {
+  content: '>';
+  left: 0;
+  transition: left ease 0.3s;
+}
+.go-github:after {
+  content: '<';
+  right: 0;
+  transition: right ease 0.3s;
+}
+.go-github:hover:before {
+  left: 7rem;
+}
+.go-github:hover:after {
+  right: 7rem;
+}
+.go-github img {
+  vertical-align: middle;
+  padding-left: 2rem;
+}
+
+/* =============
+ * Content
+ * ============= */
+
+content {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 50px;
 }
-.content code {
-  font-size: 14px;
+
+.site-description {
+  font-size: 2.1rem;
 }
-.content pre {
-  border: 0;
+
+code, pre {
+  border: 0 !important;
+}
+
+code {
+  font-size: 1.3rem;
+}
+
+p code {
+  padding: 0.5rem !important;
+}
+
+pre {
   line-height: 1;
-  padding: 0.75em;
+  padding: 1.5rem !important;
 }
-.content pre code {
+
+pre code {
   margin: 0;
 }
-.content .description {
-  text-align: center;
+
+section {
+  margin: 6rem 0;
+  display: block;
 }
-.content .entry {
-  margin-top: 25px;
+
+section:first-child {
+  margin-top: 0;
 }
-.content .entry .header {
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+section .header {
   font-weight: 400;
   font-size: 52px;
 }
-.content .entry .main {
-  font-size: 22px;
+
+section .main {
+  font-size: 1.75rem;
 }
-.footer {
+
+/* =============
+ * Footer
+ * ============= */
+
+footer {
+  margin: 6rem 0;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 1.75rem;
   text-align: center;
-}
-.footer a {
-  color: #0074d9;
 }
