@@ -72,4 +72,5 @@ Purse is lovingly built by [vladh](http://vladh.net) and [petrut](http://petruto
 Additional thanks:
 * [jade-php](https://github.com/ronan-gloo/jade-php)
 * [normalize.css](http://necolas.github.io/normalize.css/)
+* [prismjs](http://prismjs.com/)
 * [Rick Ross](http://www.godforgivesidont.com/)
